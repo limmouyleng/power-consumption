@@ -1,0 +1,34 @@
+<ion-view view-title="គណនាថាមពលប្រេីប្រាស់ប្រចាំថ្ងៃ">
+  <ion-nav-buttons side="right">
+    <button class="button button-light icon ion-gear-b" ng-click="popupSetting()">
+      ការកំណត់
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <form name="formPower" ng-submit="calculate(consumtionElements)">
+      <div ng-repeat='element in consumtionElements'>
+        <label class='item-input-inset item-stacked-label'>
+          {{element.name}}
+          <div class="item-input-wrapper">
+            <input class="item-input-wrapper" type="number" ng-model='element.consumption'>
+          </div>
+        </label>
+        <label class='item-input-inset item-stacked-label'>
+          <div class="item-input-wrapper">
+            <input class="item-input-wrapper" type="number" placeholder="ចំនួន" ng-model='element.numbers'>
+          </div>
+        </label>
+        <label class='item-input-inset item-stacked-label'>
+          <div class="item-input-wrapper">
+            <input class="item-input-wrapper" type="tel" placeholder="រយ:ពេលប្រេីប្រាស់ក្នុង ១ ថ្ងៃ" ng-model='element.time'>
+          </div>
+        </label>
+      </div>
+      <button class='button button-block button-positive' type='submit'>
+        <span>គណនាថាមពលប្រេីប្រាស់ក្នុង ១ ថ្ងៃ</span>
+      </button>
+
+    </form>
+
+  </ion-content>
+</ion-view>

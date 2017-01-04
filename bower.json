@@ -1,0 +1,10 @@
+{
+  "name": "គណនាថាមពលប្រេីប្រាស់",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.2"
+  },
+  "dependencies": {
+    "ionic-close-popup": "^0.0.1"
+  }
+}

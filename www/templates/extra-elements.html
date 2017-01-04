@@ -1,0 +1,23 @@
+<ion-view view-title="ការកំណត់">
+  <ion-content class="padding">
+    <form name="elementForms" ng-submit="addMore(data)">
+      <label class='item-input-inset item-stacked-label'>
+        ឈ្មោះឧបករណ៍អគ្គីសនី
+        <div class="item-input-wrapper">
+          <input class="item-input-wrapper" type="text" ng-model='data.name'>
+        </div>
+      </label>
+      <label class='item-input-inset item-stacked-label'>
+        តំលៃលំនាំ អនុភាពគិតជាវ៉ាត់ (W)
+        <div class="item-input-wrapper">
+          <input class="item-input-wrapper" type="number" ng-model='data.consumption'>
+        </div>
+      </label>
+
+      <button class='button button-block button-positive' type='submit'>
+        <span>យល់ព្រម</span>
+      </button>
+
+    </form>
+  </ion-content>
+</ion-view>
