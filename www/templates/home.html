@@ -1,12 +1,12 @@
-<ion-view view-title="គណនាថាមពលប្រេីប្រាស់ប្រចាំថ្ងៃ">
+<ion-view view-title="ថាមពលប្រេីប្រាស់ប្រចាំថ្ងៃ">
   <ion-nav-buttons side="right">
-    <button class="button button-light icon ion-gear-b" ng-click="popupSetting()">
-      ការកំណត់
+    <button class="button button-light icon ion-plus" ui-sref='customElements'>
+      បនែ្ថមឧបករណ៍
     </button>
   </ion-nav-buttons>
   <ion-content class="padding">
     <form name="formPower" ng-submit="calculate(consumtionElements)">
-      <div ng-repeat='element in consumtionElements'>
+      <div ng-repeat='element in consumtionElements track by $index'>
         <label class='item-input-inset item-stacked-label'>
           {{element.name}}
           <div class="item-input-wrapper">

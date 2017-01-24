@@ -1,23 +1,18 @@
-<ion-view view-title="ជ្រេីសរេីសទំរង់មានស្រាប់">
+<ion-view view-title="">
+  <ion-nav-buttons side="right">
+    <button class="button button-light icon ion-plus" ui-sref='extraElements'>
+      បនែ្ថមឧបករណ៍ផ្សេងទៀត
+    </button>
+  </ion-nav-buttons>
   <ion-content class="padding">
     <form name="formSelections" ng-submit="saveActiveElements(customElements)">
+      <h4>ជ្រេីសរេីសឧបករណ៍មានស្រាប់</h4>
       <ion-list ng-repeat='element in customElements'>
-
-        <ion-item>
-          <ion-checkbox style='border: none;' ng-model="element.active">{{element.name}}</ion-checkbox>
-          <label class='item-input-inset item-stacked-label'>
-            តំលៃអនុភាពគិតជាវ៉ាត់ (W) លំនាំស្រាប់
-            <div class="item-input-wrapper">
-              <input class="item-input-wrapper" type="number" ng-model='element.consumption'>
-            </div>
-          </label>
-        </ion-item>
-
+        <ion-checkbox style='border: none;' ng-model="element.active">{{element.name}}</ion-checkbox>
       </ion-list>
       <button class='button button-block button-positive' type='submit'>
-        <span>រក្សាទុក</span>
+        រក្សាទុក
       </button>
-
     </form>
   </ion-content>
 </ion-view>

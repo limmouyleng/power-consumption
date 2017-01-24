@@ -20,24 +20,6 @@ angular.module('app.controllers', [])
     result();
   }
 
-  vm.popupSetting = setting;
-
-  var popupSetting;
-
-  function setting() {
-    popupSetting = $ionicPopup.show({
-      templateUrl: 'templates/setting.html',
-      scope: vm,
-      title: 'ការកំណត់'
-    });
-
-    IonicClosePopupService.register(popupSetting);
-  }
-
-  vm.closePopupSetting = function () {
-    popupSetting.close();
-  }
-
   var popupResult;
 
   function result() {
